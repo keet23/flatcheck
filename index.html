@@ -21,9 +21,20 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
         h1 {
             color: #333;
             font-size: 1.8em;
+            margin-top: 10px;
         }
         .services-container {
             display: flex;
@@ -85,7 +96,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>FlatCheck - Проверка юридической чистоты квартиры</h1>
+        <div class="logo">
+            <img src="logo.jpg" alt="FlatCheck Logo">
+            <h1>FlatCheck - Проверка юридической чистоты квартиры</h1>
+        </div>
         <p>Узнайте всё о владельце и объекте недвижимости перед арендой или покупкой.</p>
         
         <div class="services-container">
