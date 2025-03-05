@@ -3,158 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlatCheck - Проверка квартир</title>
+    <title>Лендинг</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
+            background-color: #3b82f6;
+            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
-            color: #fff;
         }
-        .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            background: #1e1e1e;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header {
+            padding: 20px 0;
+        }
+        section {
+            margin-top: 50px;
         }
         .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-        .logo img {
-            max-width: 120px;
+            width: 150px;
             height: auto;
-        }
-        h1 {
-            color: #61a0ff;
-            font-size: 2.2em;
-            margin-top: 10px;
-        }
-        .services-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service-large {
-            flex: 65%;
-            padding: 25px;
-            background: #252525;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-small {
-            flex: 35%;
-            padding: 20px;
-            background: #252525;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-large:hover, .service-small:hover {
-            transform: translateY(-5px);
-        }
-        .service h2 {
-            color: #61a0ff;
-            margin-bottom: 10px;
-        }
-        .service p {
-            font-size: 1.2em;
-            color: #dcdcdc;
-            margin-bottom: 15px;
-        }
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .buttons a {
-            display: inline-block;
-            padding: 14px 22px;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            border-radius: 6px;
-            font-size: 1.1em;
-            text-align: center;
-            min-width: 160px;
-            transition: background 0.3s ease-in-out;
-        }
-        .telegram {
-            background: linear-gradient(135deg, #0088cc, #005f99);
-        }
-        .telegram:hover {
-            background: linear-gradient(135deg, #005f99, #0088cc);
-        }
-        .whatsapp {
-            background: linear-gradient(135deg, #25d366, #128c7e);
-        }
-        .whatsapp:hover {
-            background: linear-gradient(135deg, #128c7e, #25d366);
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 20px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            .services-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service-large, .service-small {
-                flex: 100%;
-            }
-            .buttons a {
-                width: 100%;
-                padding: 12px;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="./logo.jpg" alt="FlatCheck Logo">
-            
-        </div>
-        <p>Проверь квартиру перед тем, как её снять</p>
-        <p><strong>Удобно и надёжно</strong></p>
-        <p style='color: #61a0ff; font-weight: bold;'>Работа выполняется живыми юристами по недвижимости, а не искусственным интеллектом. Несем ответственность.</p>
-        
-        
-        <div class="services-container">
-            <div class="service-large">
-                <h2>Проверка квартиры перед арендой</h2>
-                <p><strong>Первая проверка - бесплатно!</strong></p>
-                <p>Далее каждая проверка - 1900 руб.</p>
-                <p>Подписка на месяц (проверяй сколько хочешь) - 3 900 руб.</p>
-                <div class="buttons">
-                    <a href="https://t.me/FlatCheckRu_bot" class="telegram">Перейти в Telegram</a>
-                    <a href="https://wa.me/your_rent_whatsapp" class="whatsapp">Перейти в WhatsApp</a>
-                </div>
-            </div>
-            
-            <div class="service-small">
-                <h2>Проверка квартиры перед покупкой</h2>
-                <p>Одна проверка - 7 900 руб.</p>
-                <div class="buttons">
-                    <a href="https://t.me/FlatCheckRu_bot" class="telegram">Перейти в Telegram</a>
-                    <a href="https://wa.me/your_buy_whatsapp" class="whatsapp">Перейти в WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <header>
+        <img src="gregre.png" alt="Логотип" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="files.html">Файлы</a></li>
+                <li><a href="https://t.me/yourchannel" target="_blank">Наш Telegram</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Простой и стильный лендинг с несколькими страницами.</p>
+    </section>
 </body>
 </html>
